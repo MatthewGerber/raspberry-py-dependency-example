@@ -1,0 +1,19 @@
+[build-system]
+requires = ['poetry-core']
+build-backend = 'poetry.core.masonry.api'
+
+[tool.poetry]
+name = 'raspberry-py-dependency-example'
+version = "0.1.0a0"
+description = 'An example of consuming raspberry-py via PyPI dependency'
+readme = 'README.md'
+authors = [
+    'Matthew Gerber <gerber.matthew@gmail.com>'
+]
+packages = [
+    { include = 'raspberry_pi_dependency_example', from = 'src'}
+]
+repository = 'https://github.com/MatthewGerber/raspberry-py-dependency-example'
+
+[tool.poetry.dependencies]
+python = '>=3.10,<3.13'

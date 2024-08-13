@@ -17,3 +17,4 @@ repository = 'https://github.com/MatthewGerber/raspberry-py-dependency-example'
 
 [tool.poetry.dependencies]
 python = '>=3.10,<3.13'
+raspberry-py = "^0.6.0"
